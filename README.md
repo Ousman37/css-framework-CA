@@ -1,27 +1,21 @@
-# css-framework-CA
+# CSS Framework CA   - Noroff
 
 
-# Semester  Cross Course Project - Noroff
-
-![crosscourseproject](https://github.com/Ousman37/Cross-course_project_Redesign/blob/main/images/hero.jpg)
+![CSS Framework ](https://github.com/Ousman37/css-framework-CA/blob/master/Screenshot%202022-10-27%20at%2009.51.58.png)
 
 ## Description
 
-This project was completed in stages throughout the first year of the Noroff Front-End development course as part of the course work and underwent many changes, initially the site being just HTML , CSS  later on adding some functionality sure as shooping cart with  javascript. finally having integrated wordpress api called it with javascript.
+Social media application.
 
 ## Built With
 
 - HTML
 
-- CSS
+- Bootstrap 
 
-- JavaScript
+- SASS
 
-## WordPress installation
 
-- Headless CMS
-- WordPress REST API to 
-- Fetching  the data
 
 
 
@@ -32,7 +26,7 @@ This project was completed in stages throughout the first year of the Noroff Fro
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/Ousman37/Cross-course_project_Redesign.git
+git clone https://github.com/Ousman37/css-framework-CA.git
 ```
 
 2. Install the dependencies:
@@ -43,12 +37,15 @@ npm install
 
 Inserting a link 
 
-[Home](https://tiny-sunburst-0d99af.netlify.app/index.html "netlify.app")
+[Home]( "netlify.app")
 
 
 ## Contact
+[My Github page] https://github.com/Ousman37
+
 [My LinkedIn page] https://www.linkedin.com/in/ethmane-didi-34885844/
 
-[My Github page] https://github.com/Ousman37
+[My instagram page] https://www.instagram.com/codewith_ethmane/
+
 
 
