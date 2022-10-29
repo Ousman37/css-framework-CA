@@ -245,7 +245,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .table th, .table td {
@@ -254,6 +254,14 @@
 }
 .table th {
   background: #f4f4f4;
+}
+
+.error-hint {
+  color: #dc3545;
+}
+
+.hidden {
+  display: none;
 }
 
 .form-group {
@@ -355,7 +363,7 @@ img {
 
 .landing {
   position: relative;
-  background: url("/src/scss/images/showcase.jpg") no-repeat center center/cover;
+  background: url("/src/scss/images/showcase2.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 .landing-inner {
