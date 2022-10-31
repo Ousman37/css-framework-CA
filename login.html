@@ -62,17 +62,11 @@
     <legend> Password* </legend>
       <div class="form-group">
         <label for="inputPassword" >your  password</label>
-        <input type="password"  class="form-control" id="regex2"  aria-describedby="regex1help" placeholder="password" pattern= "@^ # start of line (?=(?:.*[A-Z]){2,})  " 
-       title=" ([A-Za-z0-9!@#$%^&*()\-_=+{};:, !>.>]{12,20})"
-       (?=(?:.*[a-z]){2,}) 
-       (?=(?:.*\d){2,})   required>
-
-<small class="alert alert-danger" id="regex1help" > # 2 upper case letters # 2 lower case letters  dont allow more than 2 repeating characters
- # length 12-20, only above char classes (disallow spaces) # 2 digits
-(?=(?:.*[!@#$%^&*()\-_=+{};:,.>]){2,}) # 2 special characters
-(?!.*(.)\1{2}) # negative lookahead,"
-$ # end of line</small>
-
+        <input type="password"  class="form-control" id="regex2"  aria-describedby="regex1help" 
+        pattern="^[A-Za-z0-9!@#$%^&*()\-_=+{};:, !>.>]${12,20})
+        (?=(?:.*[a-z]){2,}) (?=(?:.*\d){2,})" placeholder="password" required>
+        
+        <small class="alert alert-danger" id="regex1help" > # 2 upper case letters # 2 lower case letters  dont allow more than 2 repeating characters # length 12-20, only above char classes (disallow spaces) # 2 digits # 2 special characters # negative lookahead," $ # end of line</small>
       </div>
       
 <input type="submit" value="Login" class="btn btn-primary">

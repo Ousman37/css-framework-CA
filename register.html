@@ -38,18 +38,25 @@
    </h1>
    <p class="lead"> <i class="fas fa-user"></i> Create your Account</p>
    <form action="dashboard.html" class="form">
+      <label for="exampleNameInput1">Your name</label>
     <div class="form-group">
-      <input type="text" placeholder="Name" required>
+        <input type="text" class="form-control" id="exampleNameInput1" placeholder="John Doe" name="name" required />
     </div>
     <div class="form-group">
-      <input type="email" placeholder="Email Address">
+      <label for="regex1">Your Email  Address </label>
+        <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="name@example.com" required />
+
+      
      
     </div>
     <div class="form-group">
-      <input type="password" placeholder="password" minlength="6">
+      <input type="password" name="email" class="form-control" id="passWordInputEmail2" placeholder="password"  minlength="6" required />
+    
     </div>
     <div class="form-group">
-      <input type="password" placeholder="Confirm Password" minlength="6">
+      <input type="password" name="password" class="form-control" id="passWordInputEmail2" placeholder="Confirm Password" minlength="6"
+        required />
+      
     </div>
     <input type="submit" value="Register" class="btn btn-primary">
    </form>
