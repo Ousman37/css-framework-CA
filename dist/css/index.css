@@ -287,6 +287,15 @@
 .form input[type=submit] {
   font: inherit;
 }
+.form .form-control:invalid {
+  background: var(--warning);
+}
+.form .form-control:valid + small {
+  display: none;
+}
+.form .form-control:invalid + small {
+  display: block;
+}
 .form .social-input {
   display: flex;
 }

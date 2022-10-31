@@ -7,6 +7,8 @@
     margin-top: 0.3rem;
     color: #888;
   }
+
+  
   input[type="text"],
   input[type="email"],
   input[type="password"],
@@ -23,6 +25,18 @@
   input[type="submit"]{
       font: inherit;
   }
+
+.form-control:invalid {
+  background: var(--warning);
+}
+
+.form-control:valid + small {
+  display: none;
+}
+
+.form-control:invalid + small {
+  display: block;
+}
 
   .social-input{
       display: flex;
