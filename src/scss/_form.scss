@@ -26,17 +26,7 @@
       font: inherit;
   }
 
-.form-control:invalid {
-  background: var(--warning);
-}
 
-.form-control:valid + small {
-  display: none;
-}
-
-.form-control:invalid + small {
-  display: block;
-}
 
   .social-input{
       display: flex;
@@ -64,4 +54,16 @@
       color: #0077b5;
     }
     }  
+}
+
+.form-control:invalid {
+  background: $success-color;
+}
+
+.form-control:valid + small {
+  display: none;
+}
+
+.form-control:invalid + small {
+  display: block;
 }

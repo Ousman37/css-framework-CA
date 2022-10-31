@@ -287,15 +287,6 @@
 .form input[type=submit] {
   font: inherit;
 }
-.form .form-control:invalid {
-  background: var(--warning);
-}
-.form .form-control:valid + small {
-  display: none;
-}
-.form .form-control:invalid + small {
-  display: block;
-}
 .form .social-input {
   display: flex;
 }
@@ -317,6 +308,18 @@
 }
 .form i.fa-linkedin {
   color: #0077b5;
+}
+
+.form-control:invalid {
+  background: #28a745;
+}
+
+.form-control:valid + small {
+  display: none;
+}
+
+.form-control:invalid + small {
+  display: block;
 }
 
 * {
