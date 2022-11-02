@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description"
-  content=" Welcome back we  are glad to see you back in DailyDeveloper if you have any problem of logging in or register, please don’t hesitate to contact us we will happily to go to ">
+  <meta name="description"
+    content=" Welcome back we  are glad to see you back in DailyDeveloper if you have any problem of logging in or register, please don’t hesitate to contact us we will happily to go to ">
   <title>Login | DailyDeveloper</title>
-  <link rel="stylesheet" href="./dist/css/index.css">
+  <link rel="stylesheet" href="./dist/css/main.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
- 
+
 </head>
 
 <body>
@@ -35,52 +35,54 @@
   </nav>
 
   <section class="container">
-   <!-- !Alert -->
-   <div class="alert alert-danger">
+    <!-- !Alert -->
+    <!--<div class="alert alert-danger">
     Invalid credentials
-   </div>
+   </div>-->
     <h1 class="large text-primary">
       Sign In
     </h1>
     <p class="lead"> <i class="fas fa-user"></i>Sign into your account </p>
 
-   <form method="post" class="contact-from form" id="search-dummy">
-    <fieldset>
-     <legend> USERNAME* </legend>
-      <div class="form-group">
-       <label for="inputUserName">your user name</label>
-    <input type="text" class="form-control" id="regex1" aria-describedby="regex1help" pattern="^[a-z0-9_-]{3,16}$" required
-      placeholder="example-user_101"
-      title="3-16 character username containing only lowercase letters, numbers, underscore and hyphen" />
-    <small class="alert alert-danger" id="regex1help">Make sure your username matches is between three and sixteen
-      characters, using only numbers, letters, hyphens and
-      underscores.</small>
-      </div>
-  
-   
-<fieldset>
-    <legend> Password* </legend>
-      <div class="form-group">
-        <label for="inputPassword" >your  password</label>
-        <input type="password"  class="form-control" id="regex2"  aria-describedby="regex1help" 
-        pattern="^[A-Za-z0-9!@#$%^&*()\-_=+{};:, !>.>]${12,20})
+    <form method="post" class="contact-from form" id="search-dummy">
+      <fieldset>
+        <legend> USERNAME* </legend>
+        <div class="form-group">
+          <label for="inputUserName">your user name</label>
+          <input type="text" class="form-control" id="regex1" aria-describedby="regex1help" pattern="^[a-z0-9_-]{3,16}$"
+            required placeholder="example-user_101"
+            title="3-16 character username containing only lowercase letters, numbers, underscore and hyphen" />
+          <small class="alert alert-danger" id="regex1help">Make sure your username matches is between three and sixteen
+            characters, using only numbers, letters, hyphens and
+            underscores.</small>
+        </div>
+
+
+        <fieldset>
+          <legend> Password* </legend>
+          <div class="form-group">
+            <label for="inputPassword">your password</label>
+            <input type="password" class="form-control" id="regex2" aria-describedby="regex1help" pattern="^[A-Za-z0-9!@#$%^&*()\-_=+{};:, !>.>]${12,20})
         (?=(?:.*[a-z]){2,}) (?=(?:.*\d){2,})" placeholder="password" required>
-        
-        <small class="alert alert-danger" id="regex1help" > # 2 upper case letters # 2 lower case letters  dont allow more than 2 repeating characters # length 12-20, only above char classes (disallow spaces) # 2 digits # 2 special characters # negative lookahead," $ # end of line</small>
-      </div>
-      
-<input type="submit" value="Login" class="btn btn-primary">
-  </fieldset>
-  </fieldset>
+
+            <small class="alert alert-danger" id="regex1help"> # 2 upper case letters # 2 lower case letters dont allow
+              more than 2 repeating characters # length 12-20, only above char classes (disallow spaces) # 2 digits # 2
+              special characters # negative lookahead," $ # end of line</small>
+          </div>
+
+          <input type="submit" value="Login" class="btn btn-primary">
+        </fieldset>
+      </fieldset>
     </form>
-   
-  
+
     <p class="my-2">
       Don´t have an account? <a href="register.html">Sign In </a>
     </p>
-    
   </section>
-  
-  <script  src="./src/scss/js/jquery.js" defer ></script>
+
+
+  <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
