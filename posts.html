@@ -18,24 +18,42 @@
 </head>
 
 <body>
-  <nav class="navbar bg-dark">
-    <h1>
-      <a href="dashboard.html"><i class="fas fa-code"></i>DailyDeveloper</a>
-    </h1>
-    <ul>
-      <li> <a href="index.html">Home</a></li>
-      <li> <a href="profiles.html">Developers</a></li>
-      <li> <a href="posts.html">Posts</a></li>
-      <li> <a href="dashboard.html">
-          <i class="fas fa-user"></i>
-          <span class="hide-sm"> Dashboard</span></a></li>
-      <li> <a href="login.html">
-          <i class="fas fa-sign-out-alt"></i>
-          <span class="hide-sm"> Logout</span></a></li>
-    </ul>
-  </nav>
+  <header class=" navbar navbar-expand-lg  bg-dark  ">
+    <a class="navbar-brand mb-0" href="dashboard.html"><i class="fas fa-code"></i>DailyDeveloper</a>
+    <nav class="container-fluid d-flex align-items-center">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <div class="hamburger-toggle">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
 
-  <section class="container">
+          <li class="nav-item active">
+            <a class="nav-link" href="profile.html">Developers</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link " href="register.html">Register</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+
+        <a href="#" class="get-started-btn scrollto">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container bg-light">
     <h1 class="large text-primary">Posts</h1>
     <p class="lead"><i class="fas fa-user"></i> Welcome to the community</p>
 

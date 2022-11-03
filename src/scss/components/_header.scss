@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+// Navbar
+
+.navbar {
+  /*display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;*/
+  border-bottom: solid 1px $primary-color;
+  opacity: 0.9;
+
+  ul {
+    display: flex;
+  }
+  a {
+    color: #fff;
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .nav-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-menu > ul {
+    display: flex;
+  }
+
+  .nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 22px;
+  }
+}
+
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+// Get Started Button
+
+.get-started-btn {
+  margin-left: 25px;
+  border-radius: 4px;
+  padding: 6px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 0.8125rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid $success-color;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+// Showcase
+
+.landing {
+  position: relative;
+  background: url("/src/scss/images/showcase2.jpg") no-repeat center
+    center/cover;
+  height: 100vh;
+
+  &-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+// Animation to fade in the dropdown menus
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Assigning the above animation to all dropdown menus
+.dropdown-menu {
+  &.show {
+    -webkit-animation: fadeIn 0.3s alternate; /* Safari 4.0 - 8.0 */
+    animation: fadeIn 0.3s alternate;
+  }
+}
+
+// Mega Menu adjustments
+.nav-item.dropdown.dropdown-mega {
+  position: static;
+  .dropdown-menu {
+    width: 90%;
+    top: auto;
+    left: 5%;
+  }
+}
+
+// Complete styles for main navbar toggler and hamburger menu
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  outline: none;
+  &:focus {
+    box-shadow: none;
+  }
+  .hamburger-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+    float: right;
+    .hamburger {
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(0deg);
+      left: 50%;
+      top: 50%;
+      width: 50%;
+      height: 50%;
+      pointer-events: none;
+      span {
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        background: #333;
+        border-radius: 2px;
+        z-index: 1;
+        transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1),
+          background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), all 0.2s ease-in-out;
+        left: 0px;
+        &:first-child {
+          top: 10%;
+          transform-origin: 50% 50%;
+          transform: translate(0% -50%) !important;
+        }
+        &:nth-child(2) {
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+        &:last-child {
+          left: 0px;
+          top: auto;
+          bottom: 10%;
+          transform-origin: 50% 50%;
+        }
+      }
+      &.active {
+        span {
+          position: absolute;
+          margin: 0;
+          &:first-child {
+            top: 45%;
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            left: 50%;
+            width: 0px;
+          }
+          &:last-child {
+            top: 45%;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.icons {
+  display: inline-flex;
+  margin-left: auto;
+  a {
+    transition: all 0.2s ease-in-out;
+    padding: 0.2rem 0.4rem;
+    color: #ccc !important;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      text-shadow: 0 0 30px white;
+    }
+  }
+}

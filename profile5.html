@@ -19,24 +19,46 @@
 </head>
 
 <body>
-  <nav class="navbar bg-dark">
-    <h1>
-      <a href="dashboard.html"><i class="fas fa-code"></i>DailyDeveloper</a>
-    </h1>
-    <ul>
-      <li> <a href="index.html">Home</a></li>
-      <li> <a href="profiles.html">Developers</a></li>
-      <li> <a href="register.html">Register</a></li>
-      <li> <a href="login.html">Login</a></li>
-    </ul>
-  </nav>
+  <header class=" navbar navbar-expand-lg  bg-dark  ">
+    <a class="navbar-brand mb-0" href="dashboard.html"><i class="fas fa-code"></i>DailyDeveloper</a>
+    <nav class="container-fluid d-flex align-items-center">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <div class="hamburger-toggle">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
 
-  <section class="container">
-    <a href="profiles.html" class="btn">Back To Profiles</a>
-    <!-- !Profile-grid -->
+          <li class="nav-item active">
+            <a class="nav-link" href="profile.html">Developers</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link " href="register.html">Register</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+
+        <a href="#" class="get-started-btn scrollto">Get Started</a>
+      </div>
+    </nav>
+  </header>
+  <section class="container bg-light p-4">
+    <a href="profiles.html" class="btn btn-lg btn-primary">Back To Profiles</a>
+    
     <div class="profile-grid my-1">
       <!-- !Top -->
-      <div class="profile-top bg-primary p-2">
+      <div class="profile-top profile-top bg-light p-2 ">
         <img class="round-img my-1" src="/src/scss/images/profile2-min.png" alt="Gravatar" />
 
         <h1>Nikolai Kav</h1>
@@ -63,14 +85,14 @@
 
       <!-- !About -->
       <div class="profile-about bg-light p-2">
-        <h2 class="text-primary">Nikolai´S Bio</h2>
+        <h2 class="text-dark">Nikolai´S Bio</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo modi saepe, placeat minus sunt itaque debitis,
           accusamus voluptatum cumque culpa consequatur officiis laudantium reiciendis, dolor earum eos! Atque,
           quibusdam quas.
         </p>
         <div class="line"></div>
-        <h2 class="text-primary">Skill set</h2>
+        <h2 class="text-dark">Skill set</h2>
         <div class="skills">
 
           <div class="p-1">
@@ -97,7 +119,7 @@
       </div>
       <!--!Experience -->
       <div class="profile-exp bg-white p-2">
-        <h2 class="text-primary">Experiences </h2>
+        <h2 class="text-dark">Experiences </h2>
         <div>
           <h3>Microsoft</h3>
           <p>Oct 2011 - current</p>
@@ -115,8 +137,8 @@
         </div>
       </div>
       <!--!Education -->
-      <div class="profile-edu bg-white p-2">
-        <h2 class="text-primary">Education </h2>
+      <div class="profile-edu bg-light p-2">
+        <h2 class="text-dark">Education </h2>
         <div>
           <h3>University of Oslo </h3>
           <p>Sep 1992 - June 2000</p>
@@ -129,11 +151,11 @@
       <!--!Github Repos -->
 
       <div class="profile-github">
-        <h2 class="text-primary my-1">
+        <h2 class="text-dark my-1">
           <i class="fa-brands fa-github"></i> Github Repos
         </h2>
 
-        <div class="repo bg-white my-1 p-1">
+        <div class="repo text-dark bg-light my-1 p-1">
           <div>
             <h4> <a href="#">Repo One </a></h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. officia possimus magni, praesentium quibusdam!
@@ -149,7 +171,7 @@
           </div>
         </div>
 
-        <div class="repo bg-white my-1 p-1">
+        <div class="repo bg-light my-1 p-1">
           <div>
             <h4> <a href="#">Repo Two</a></h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. officia possimus magni, praesentium quibusdam!
@@ -165,16 +187,16 @@
           </div>
         </div>
 
-        <div class="repo bg-white my-1 p-1">
+        <div class="repo text-dark bg-light my-1 p-1">
           <div>
-            <h4> <a href="#">Repo Three</a></h4>
+            <h4 class="text-dark"> <a href="#">Repo Three</a></h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. officia possimus magni, praesentium quibusdam!
             </p>
           </div>
 
           <div>
             <ul>
-              <li class="badge badge-primary">Stars: 44</li>
+              <li class="badge  badge-primary">Stars: 44</li>
               <li class="badge badge-dark">Watchers: 25</li>
               <li class="badge badge-light">Forks: 30</li>
             </ul>
