@@ -27,7 +27,7 @@
 }
 
 .text-primary {
-  color: $primary-color;
+  color: $dark-color;
 }
 
 .round-img {
@@ -43,7 +43,7 @@
 }
 
 // Backgrounds
-.bg {
+.bg-primary {
   &-primary {
     @include set-background($primary-color);
   }
@@ -66,6 +66,11 @@
   }
 }
 
+
+.post-form-header{
+  background: $primary-color;
+  color: #fff;
+}
 // !Buttons
 .btn {
   display: inline-block;
