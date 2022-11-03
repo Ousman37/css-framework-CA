@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description"
-  content=" DailyDeveloper  A free place  for Developer, business, website or app development create your profile to standout and get job! ">
+  <meta name="description"
+    content=" DailyDeveloper  A free place  for Developer, business, website or app development create your profile to standout and get job! ">
   <title>Create Profile | DailyDeveloper</title>
   <link rel="stylesheet" href="./dist/css/main.css">
 
@@ -19,25 +19,60 @@
 </head>
 
 <body>
-  <section class="container">
+  <header class=" navbar navbar-expand-lg  bg-dark  ">
+    <a class="navbar-brand mb-0" href="dashboard.html"><i class="fas fa-code"></i>DailyDeveloper</a>
+    <nav class="container-fluid d-flex align-items-center">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <div class="hamburger-toggle">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="profile.html">Developers</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link " href="register.html">Register</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+
+        <a href="#" class="get-started-btn scrollto">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container bg-light p-4">
     <h1 class="large text primary">Create Your Profile</h1>
     <p class="lead"><i class="fas fa-user"></i> Let=s get some information to make your profile stand out</p>
 
-<small>* = required fields</small>
- <form  class="form">
-  <div class="from-group">
-    <select name="status">
-      <option value="0">* Select Professional Status</option>
-      <option value="Developer">Developer</option>
-      <option value="Junior Developer">Junior Developer</option>
-      <option value="Senior Developer">Senior Developer</option>
-      <option value="Manager">Manager</option>
-      <option value="Student or Learning">Student or Learning</option>
-      <option value="Instructor">Instructor or Teacher</option>
-      <option value="Intern">Intern</option>
-      <option value="Other">Other</option>
-      </select>
-      <small class="form-text">Give us an idea of where you are at in your career</small>
+    <small>* = required fields</small>
+    <form class="form">
+      <div class="from-group">
+        <select name="status">
+          <option value="0">* Select Professional Status</option>
+          <option value="Developer">Developer</option>
+          <option value="Junior Developer">Junior Developer</option>
+          <option value="Senior Developer">Senior Developer</option>
+          <option value="Manager">Manager</option>
+          <option value="Student or Learning">Student or Learning</option>
+          <option value="Instructor">Instructor or Teacher</option>
+          <option value="Intern">Intern</option>
+          <option value="Other">Other</option>
+        </select>
+        <small class="form-text">Give us an idea of where you are at in your career</small>
       </div>
       <div class="form-group">
         <input type="text" placeholder="Company" name="company" />
@@ -65,43 +100,43 @@
         <textarea placeholder="A short bio of yourself" name="bio"></textarea>
         <small class="form-text">Tell us a little about yourself</small>
       </div>
-      
+
       <div class="my-2">
         <button type="button" class="btn btn-light">
           Add Social Network Links
         </button>
         <span>Optional</span>
       </div>
-      
+
       <div class="form-group social-input">
         <i class="fab fa-twitter fa-2x"></i>
         <input type="text" placeholder="Twitter URL" name="twitter" />
       </div>
-      
+
       <div class="form-group social-input">
         <i class="fab fa-facebook fa-2x"></i>
         <input type="text" placeholder="Facebook URL" name="facebook" />
       </div>
-      
+
       <div class="form-group social-input">
         <i class="fab fa-youtube fa-2x"></i>
         <input type="text" placeholder="YouTube URL" name="youtube" />
       </div>
-      
+
       <div class="form-group social-input">
         <i class="fab fa-linkedin fa-2x"></i>
         <input type="text" placeholder="Linkedin URL" name="linkedin" />
       </div>
-      
+
       <div class="form-group social-input">
         <i class="fab fa-instagram fa-2x"></i>
         <input type="text" placeholder="Instagram URL" name="instagram" />
       </div>
       <input type="submit" class="btn btn-primary my-1" />
       <a class="btn btn-light my-1" href="dashboard.html">Go Back</a>
-    </select>
-  </div>
- </form>
+      </select>
+      </div>
+    </form>
 
   </section>
 </body>
