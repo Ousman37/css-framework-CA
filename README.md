@@ -1,7 +1,7 @@
 # CSS Framework CA   - Noroff
 
 
-![CSS Framework ](https://github.com/Ousman37/css-framework-CA/blob/master/Screenshot%202022-10-27%20at%2009.51.58.png)
+![CSS Framework ]()
 
 ## Description
 
